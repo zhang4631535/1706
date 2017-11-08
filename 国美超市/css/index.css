@@ -1,0 +1,209 @@
+#index-text-wrap {
+  width: 100%;
+  height: 158px;
+  border-bottom: 2px solid #d917a2; }
+  #index-text-wrap #index-text {
+    width: 1200px;
+    height: 118px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative; }
+    #index-text-wrap #index-text #topSearch {
+      position: absolute;
+      width: 500px;
+      top: 32px;
+      left: 385px; }
+      #index-text-wrap #index-text #topSearch #index-search {
+        border: 2px solid #d917a2;
+        font-size: 14px;
+        height: 30px;
+        background: #fff; }
+        #index-text-wrap #index-text #topSearch #index-search form {
+          display: block; }
+          #index-text-wrap #index-text #topSearch #index-search form #search-type-dropdown {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+            color: #A5A5A5;
+            float: left;
+            width: 62px;
+            height: 30px;
+            line-height: 30px; }
+            #index-text-wrap #index-text #topSearch #index-search form #search-type-dropdown #search-type {
+              position: relative;
+              width: 42px;
+              padding: 0 10px;
+              height: 32px;
+              border-right: 1px solid #dd00a7; }
+              #index-text-wrap #index-text #topSearch #index-search form #search-type-dropdown #search-type span {
+                line-height: 32px;
+                text-align: center; }
+            #index-text-wrap #index-text #topSearch #index-search form #search-type-dropdown #search-type-list {
+              position: absolute;
+              right: -1px;
+              top: 32px;
+              border: 1px solid #dd00a7;
+              background-color: #fff; }
+          #index-text-wrap #index-text #topSearch #index-search form input {
+            border: none;
+            width: 310px;
+            padding: 5px 5px 5px 72px;
+            line-height: 20px;
+            float: left;
+            font-size: 14px;
+            font-family: arial;
+            color: #5E5E5E;
+            background-color: transparent; }
+          #index-text-wrap #index-text #topSearch #index-search form button {
+            width: 90px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            float: right;
+            display: inline;
+            background: #dd00a7;
+            font: 16px/30px 'microsoft yahei';
+            color: #fff;
+            letter-spacing: 2px;
+            text-indent: 0; }
+      #index-text-wrap #index-text #topSearch #hotword {
+        margin: 6px 0 0;
+        color: #A5A5A5;
+        overflow: hidden;
+        line-height: 14px;
+        height: 14px;
+        font-size: 12px; }
+        #index-text-wrap #index-text #topSearch #hotword a {
+          display: inline-block;
+          margin-right: 5px;
+          line-height: 14px;
+          color: #A5A5A5;
+          font-family: 'microsoft yahei'; }
+          #index-text-wrap #index-text #topSearch #hotword a:nth-of-type(1) {
+            color: #dd00a7; }
+          #index-text-wrap #index-text #topSearch #hotword a:nth-of-type(4) {
+            color: #dd00a7; }
+  #index-text-wrap #index-text-bottom {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto; }
+    #index-text-wrap #index-text-bottom #index-tit {
+      float: left;
+      width: 181px;
+      height: 40px;
+      padding-left: 19px;
+      background: #d917a2;
+      line-height: 40px; }
+      #index-text-wrap #index-text-bottom #index-tit a {
+        color: #fff;
+        font-size: 16px; }
+    #index-text-wrap #index-text-bottom #index-text-bottom-list {
+      float: left;
+      padding-left: 19px;
+      width: 751px;
+      height: 38px; }
+      #index-text-wrap #index-text-bottom #index-text-bottom-list li {
+        float: left; }
+        #index-text-wrap #index-text-bottom #index-text-bottom-list li h2 {
+          font-weight: bold; }
+          #index-text-wrap #index-text-bottom #index-text-bottom-list li h2 a {
+            font-size: 14px;
+            display: inline-block;
+            padding: 0 19px;
+            word-break: keep-all;
+            line-height: 38px;
+            width: 60px;
+            color: #000;
+            text-decoration: none; }
+
+#index-banner {
+  width: 100%;
+  height: 570px; }
+  #index-banner #index-banner-top-wrap {
+    height: 400px;
+    width: 100%; }
+    #index-banner #index-banner-top-wrap #index-banner-top {
+      width: 1200px;
+      height: 400px;
+      background: #eee;
+      margin: 0 auto;
+      position: relative; }
+      #index-banner #index-banner-top-wrap #index-banner-top nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 570px;
+        width: 200px;
+        background: #d917a2;
+        float: left;
+        z-index: 10; }
+        #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list a {
+          margin-right: 5px;
+          color: #fff; }
+        #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list #nav-item-first {
+          padding-top: 20px; }
+        #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item {
+          padding: 10px 15px;
+          width: 170px;
+          height: 40px; }
+          #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item:hover {
+            background: #fff; }
+            #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item:hover a {
+              color: #000; }
+              #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item:hover a:hover {
+                color: #d917a2; }
+          #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item h2 {
+            display: block;
+            width: 80px;
+            height: 24px;
+            overflow: hidden; }
+            #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list .nav-item h2 a {
+              font-size: 14px; }
+        #index-banner #index-banner-top-wrap #index-banner-top nav #nav-json {
+          position: absolute;
+          top: 0;
+          left: 200px;
+          width: 758px;
+          height: 568px;
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          border-color: #e5e5e5 #e5e5e5 #e5e5e5 #fff;
+          display: none; }
+      #index-banner #index-banner-top-wrap #index-banner-top #banner {
+        width: 760px;
+        height: 400px;
+        background: orangered;
+        position: absolute;
+        top: 0;
+        left: 200px; }
+      #index-banner #index-banner-top-wrap #index-banner-top #banner-right {
+        position: absolute;
+        left: 960px;
+        top: 0;
+        width: 240px;
+        height: 570px;
+        background: pink;
+        float: left; }
+  #index-banner #index-banner-bottom-wrap {
+    height: 170px;
+    width: 100%; }
+    #index-banner #index-banner-bottom-wrap #index-banner-bottom {
+      margin: 0 auto;
+      width: 1200px;
+      height: 170px;
+      position: relative; }
+      #index-banner #index-banner-bottom-wrap #index-banner-bottom #index-banner-bottom-center {
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        width: 750px;
+        height: 160px;
+        background: red;
+        margin-left: 200px;
+        padding: 10px 0 0 10px; }
+        #index-banner #index-banner-bottom-wrap #index-banner-bottom #index-banner-bottom-center img:nth-of-type(2) {
+          margin: 0 10px; }
+
+/*# sourceMappingURL=index.css.map */
