@@ -281,4 +281,417 @@
         #index-banner #index-banner-bottom-wrap #index-banner-bottom #index-banner-bottom-center img:nth-of-type(2) {
           margin: 0 10px; }
 
+#index-quanzi-wrap {
+  width: 100%;
+  margin: 18px auto 0;
+  color: #333; }
+  #index-quanzi-wrap #index-quanzi {
+    width: 1200px;
+    margin: 0 auto; }
+    #index-quanzi-wrap #index-quanzi p {
+      font-size: 24px;
+      line-height: 42px; }
+    #index-quanzi-wrap #index-quanzi ul {
+      border: 1px solid #e5e5e5;
+      padding: 20px 0 9px 10px;
+      height: 266px; }
+      #index-quanzi-wrap #index-quanzi ul li {
+        float: left;
+        width: 275px;
+        margin: 0 10px;
+        display: inline;
+        overflow: hidden; }
+        #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(2) {
+          padding: 10px 0 0;
+          font-size: 14px;
+          line-height: 22px;
+          height: 22px;
+          overflow: hidden; }
+          #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(2) span {
+            float: left;
+            color: #fff;
+            padding: 0 5px;
+            background: #f97142;
+            border-radius: 2px;
+            line-height: 22px;
+            height: 22px;
+            overflow: hidden; }
+          #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(2) a {
+            color: #333;
+            padding-left: 10px;
+            word-break: break-all;
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 22px;
+            font-size: 14px; }
+            #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(2) a:hover {
+              color: red; }
+        #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(3) {
+          line-height: 32px;
+          color: #999;
+          font-size: 12px; }
+          #index-quanzi-wrap #index-quanzi ul li div:nth-of-type(3) span {
+            margin-right: 20px;
+            color: #ed283a; }
+
+#index-brand-wrap {
+  width: 100%; }
+  #index-brand-wrap #index-brand {
+    margin: 0 auto;
+    width: 1200px;
+    height: 625px; }
+    #index-brand-wrap #index-brand li {
+      cursor: pointer; }
+      #index-brand-wrap #index-brand li:hover img {
+        background: rgba(255, 255, 255, 0.4); }
+    #index-brand-wrap #index-brand #index-brand-pp {
+      display: inline;
+      margin-right: 13px;
+      float: left; }
+      #index-brand-wrap #index-brand #index-brand-pp div {
+        background: #d917a2;
+        padding-left: 10px;
+        margin-top: 30px;
+        width: 382px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+        color: #fff; }
+      #index-brand-wrap #index-brand #index-brand-pp ul {
+        position: relative;
+        width: 390px;
+        height: 554px;
+        margin-top: 2px;
+        border: 1px solid #eee;
+        border-top: none;
+        overflow: hidden; }
+        #index-brand-wrap #index-brand #index-brand-pp ul li {
+          float: left;
+          width: 194px;
+          height: 184px;
+          border-right: 1px dashed #eee;
+          border-bottom: 1px dashed #eee;
+          overflow: hidden; }
+          #index-brand-wrap #index-brand #index-brand-pp ul li:nth-of-type(2) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-pp ul li:nth-of-type(4) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-pp ul li:nth-of-type(6) {
+            border-bottom: none; }
+          #index-brand-wrap #index-brand #index-brand-pp ul li:nth-of-type(6) {
+            border-right: none;
+            border-bottom: none; }
+    #index-brand-wrap #index-brand #index-brand-rq {
+      display: inline;
+      margin-right: 13px;
+      float: left; }
+      #index-brand-wrap #index-brand #index-brand-rq div {
+        background: #d917a2;
+        padding-left: 10px;
+        margin-top: 30px;
+        width: 380px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+        color: #fff; }
+      #index-brand-wrap #index-brand #index-brand-rq ul {
+        position: relative;
+        width: 388px;
+        height: 554px;
+        margin-top: 2px;
+        border: 1px solid #eee;
+        border-top: none;
+        overflow: hidden; }
+        #index-brand-wrap #index-brand #index-brand-rq ul li {
+          float: left;
+          width: 193px;
+          height: 184px;
+          border-right: 1px dashed #eee;
+          border-bottom: 1px dashed #eee;
+          overflow: hidden; }
+          #index-brand-wrap #index-brand #index-brand-rq ul li:nth-of-type(2) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-rq ul li:nth-of-type(4) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-rq ul li:nth-of-type(6) {
+            border-bottom: none; }
+          #index-brand-wrap #index-brand #index-brand-rq ul li:nth-of-type(6) {
+            border-right: none;
+            border-bottom: none; }
+    #index-brand-wrap #index-brand #index-brand-bb {
+      float: left; }
+      #index-brand-wrap #index-brand #index-brand-bb div {
+        background: #d917a2;
+        padding-left: 10px;
+        margin-top: 30px;
+        width: 380px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+        color: #fff; }
+      #index-brand-wrap #index-brand #index-brand-bb div {
+        background: #d917a2;
+        padding-left: 10px;
+        margin-top: 30px;
+        width: 380px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 20px;
+        color: #fff; }
+      #index-brand-wrap #index-brand #index-brand-bb ul {
+        position: relative;
+        width: 388px;
+        height: 554px;
+        margin-top: 2px;
+        border: 1px solid #eee;
+        border-top: none;
+        overflow: hidden; }
+        #index-brand-wrap #index-brand #index-brand-bb ul li {
+          float: left;
+          width: 193px;
+          height: 184px;
+          border-right: 1px dashed #eee;
+          border-bottom: 1px dashed #eee;
+          overflow: hidden; }
+          #index-brand-wrap #index-brand #index-brand-bb ul li:nth-of-type(2) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-bb ul li:nth-of-type(4) {
+            border-right: none; }
+          #index-brand-wrap #index-brand #index-brand-bb ul li:nth-of-type(6) {
+            border-bottom: none; }
+          #index-brand-wrap #index-brand #index-brand-bb ul li:nth-of-type(6) {
+            border-right: none;
+            border-bottom: none; }
+
+#fixed-bar-wrap {
+  width: 100%;
+  position: relative;
+  z-index: 98;
+  height: 50px;
+  margin: 40px 0 20px 0; }
+  #fixed-bar-wrap #fixed-bar {
+    border-bottom: none;
+    box-shadow: none;
+    background: #d917a2;
+    height: 50px; }
+    #fixed-bar-wrap #fixed-bar #wrapper {
+      width: 1200px;
+      clear: both;
+      position: relative;
+      margin: 0 auto; }
+      #fixed-bar-wrap #fixed-bar #wrapper div {
+        height: 50px;
+        line-height: 50px;
+        width: 95px;
+        font-size: 22px;
+        color: #fff; }
+      #fixed-bar-wrap #fixed-bar #wrapper #index-floor {
+        position: absolute;
+        left: 95px;
+        top: 10px;
+        float: left;
+        width: 1060px;
+        height: 30px;
+        margin-left: 18px;
+        overflow: hidden; }
+        #fixed-bar-wrap #fixed-bar #wrapper #index-floor li {
+          width: 94px;
+          height: 30px;
+          float: left; }
+          #fixed-bar-wrap #fixed-bar #wrapper #index-floor li a {
+            display: block;
+            width: 84px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px; }
+            #fixed-bar-wrap #fixed-bar #wrapper #index-floor li a:hover {
+              background: #C80C93;
+              border-radius: 3px; }
+          #fixed-bar-wrap #fixed-bar #wrapper #index-floor li .floors {
+            background: #C80C93;
+            border-radius: 3px; }
+
+#floor-area-wrap {
+  width: 100%;
+  margin-top: 30px; }
+  #floor-area-wrap #floor-area {
+    width: 1200px;
+    margin: 0 auto; }
+    #floor-area-wrap #floor-area #model-head {
+      margin-top: 27px;
+      width: 100%;
+      height: 37px;
+      border-bottom: 1px solid #666; }
+      #floor-area-wrap #floor-area #model-head h2 {
+        float: left;
+        width: 360px;
+        height: 26px;
+        color: #333;
+        font: 400 24px/26px "Microsoft YaHei";
+        overflow: hidden; }
+      #floor-area-wrap #floor-area #model-head ul {
+        float: right;
+        width: 800px;
+        height: 38px;
+        text-align: right;
+        overflow: hidden; }
+        #floor-area-wrap #floor-area #model-head ul li {
+          float: right;
+          padding-left: 22px; }
+          #floor-area-wrap #floor-area #model-head ul li a {
+            padding-top: 15px;
+            font: 400 10px/38px "Microsoft YaHei";
+            color: #666; }
+            #floor-area-wrap #floor-area #model-head ul li a:hover {
+              color: red; }
+    #floor-area-wrap #floor-area #floor-body {
+      width: 100%;
+      height: 520px;
+      background: #fff;
+      overflow: hidden; }
+      #floor-area-wrap #floor-area #floor-body #floor-body-box1 {
+        float: left;
+        position: relative;
+        width: 210px;
+        height: 520px;
+        overflow: hidden; }
+        #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t {
+          position: relative;
+          width: 210px;
+          height: 375px;
+          overflow: hidden; }
+          #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t #floor-bant {
+            margin-left: -27px;
+            position: absolute;
+            left: 50%;
+            bottom: 13px;
+            z-index: 1;
+            height: 20px;
+            overflow: hidden;
+            text-align: center; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t #floor-bant ul li {
+              display: inline-block;
+              margin-right: 5px;
+              font-size: 24px;
+              color: #666;
+              cursor: pointer; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t #floor-bant ul .fl-act {
+              color: #ff5c5f; }
+          #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t #floor-banner {
+            position: relative;
+            z-index: 0;
+            height: 100%;
+            width: 100%; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-t #floor-banner ul li {
+              display: block;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 210px;
+              height: 375px;
+              zoom: 1;
+              vertical-align: middle; }
+        #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-b {
+          padding-left: 35px;
+          padding-top: 20px;
+          width: 175px;
+          height: 125px;
+          background: #d77305; }
+          #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-b a {
+            display: block;
+            float: left;
+            margin-right: 15px;
+            width: 70px;
+            height: 26px;
+            font-size: 14px;
+            color: #fff;
+            overflow: hidden; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box1 #floor-box1-b a:hover {
+              text-decoration: underline; }
+      #floor-area-wrap #floor-area #floor-body #floor-body-box2 {
+        float: left;
+        position: relative;
+        width: 820px;
+        height: 520px;
+        overflow: hidden; }
+        #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list {
+          position: relative;
+          width: 819px;
+          height: 520px;
+          overflow: hidden;
+          float: left; }
+          #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li {
+            position: relative;
+            z-index: 1;
+            float: left;
+            width: 204px;
+            height: 259px;
+            border-bottom: 1px solid #f3f3f3;
+            border-right: 1px solid #f3f3f3; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li:nth-of-type(4) {
+              border-right: none; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li:nth-of-type(8) {
+              border-right: none; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li:hover #floor-cart {
+              display: block; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #floor-cart {
+              position: absolute;
+              bottom: 0;
+              width: 204px;
+              background: #fff;
+              z-index: 2;
+              display: none; }
+              #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #floor-cart p {
+                width: 204px;
+                text-align: center;
+                color: #e3101e;
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 700; }
+              #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #floor-cart button {
+                width: 204px;
+                height: 35px;
+                border: none;
+                color: #fff;
+                background: #d917a2;
+                cursor: pointer; }
+            #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #fl-p {
+              position: relative;
+              width: 170px;
+              height: 232px;
+              top: 20px;
+              left: 21px;
+              z-index: 1; }
+              #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #fl-p #floor-pic {
+                width: 160px;
+                height: 160px; }
+              #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #fl-p #floor-txt #floor-name {
+                margin-top: 15px;
+                width: 100%;
+                height: 21px;
+                font: 12px/18px "Microsoft YaHei";
+                overflow: hidden; }
+                #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #fl-p #floor-txt #floor-name a {
+                  color: #5e5e5e; }
+              #floor-area-wrap #floor-area #floor-body #floor-body-box2 #floor-body-list li #fl-p #floor-txt #floor-price {
+                color: #e3101e;
+                padding-top: 5px;
+                height: auto;
+                line-height: 20px;
+                font-size: 16px; }
+      #floor-area-wrap #floor-area #floor-body #floor-body-box3 {
+        float: right;
+        width: 170px;
+        height: 520px;
+        background: blue; }
+        #floor-area-wrap #floor-area #floor-body #floor-body-box3 a {
+          display: block;
+          border-bottom: 1px solid #fdf0d9; }
+          #floor-area-wrap #floor-area #floor-body #floor-body-box3 a img {
+            border: none; }
+
 /*# sourceMappingURL=index.css.map */
