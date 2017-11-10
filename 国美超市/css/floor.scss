@@ -1,0 +1,256 @@
+$width:1200px;
+$wid100:100%;
+#floor-area-wrap {
+    width: $wid100;
+    margin-top: 30px;
+    #floor-area {
+        width: $width;
+        margin: 0 auto;
+        #model-head {
+            margin-top: 27px;
+            width: 100%;
+            height: 37px;
+            border-bottom: 1px solid #666;
+            h2 {
+                float: left;
+                width: 360px;
+                height: 26px;
+                color: #333;
+                font: 400 24px/26px "Microsoft YaHei";
+                overflow: hidden;
+            }
+            ul {
+                float: right;
+                width: 800px;
+                height: 38px;
+                text-align: right;
+                overflow: hidden;
+                li {
+                    float: right;
+                    padding-left: 22px;
+                    a {
+                        padding-top: 15px;
+                        font: 400 10px/38px "Microsoft YaHei";
+                        color: #666;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+        #floor-body {
+            width: $wid100;
+            height: 520px;
+            background: #fff;
+            overflow: hidden;
+            #floor-body-box1 {
+                float: left;
+                position: relative;
+                width: 210px;
+                height: 520px;
+                overflow: hidden;
+                #floor-box1-t {
+                    position: relative;
+                    width: 210px;
+                    height: 375px;
+                    overflow: hidden;
+                    #floor-bant {
+                        margin-left: -27px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 13px;
+                        z-index: 1;
+                        height: 20px;
+                        overflow: hidden;
+                        text-align: center;
+                        ul {
+                            li {
+                                display: inline-block;
+                                margin-right: 5px;
+                                font-size: 24px;
+                                color: #666;
+                                cursor: pointer;
+                            }
+                            .fl-act {
+                                color: #ff5c5f;
+                            }
+                        }
+                    }
+                    #floor-banner {
+                        position: relative;
+                        z-index: 0;
+                        height: 100%;
+                        width: 100%;
+                        ul {
+                            li {
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 210px;
+                                height: 375px;
+                                zoom: 1;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                #floor-box1-b {
+                    padding-left: 35px;
+                    padding-top: 20px;
+                    width: 175px;
+                    height: 125px;
+                    background: #d77305;
+                    a {
+                        display: block;
+                        float: left;
+                        margin-right: 15px;
+                        width: 70px;
+                        height: 26px;
+                        font-size: 14px;
+                        color: #fff;
+                        overflow: hidden;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            #floor-body-box2 {
+                float: left;
+                position: relative;
+                width: 820px;
+                height: 520px;
+                overflow: hidden;
+                #floor-body-list {
+                    position: relative;
+                    width: 819px;
+                    height: 520px;
+                    overflow: hidden;
+                    float: left;
+                    li {
+                        position: relative;
+                        z-index: 1;
+                        float: left;
+                        width: 204px;
+                        height: 259px;
+                        border-bottom: 1px solid #f3f3f3;
+                        border-right: 1px solid #f3f3f3;
+                        &:nth-of-type(4){
+                            border-right:none;
+                        }
+                        &:nth-of-type(8){
+                            border-right:none;
+                        }
+                        &:hover #floor-cart{
+                            display: block;
+                        }
+                        #floor-cart{
+                            position: absolute;
+                            bottom: 0;
+                            width: 204px;
+                            background: #fff;
+                            z-index: 2;
+                            display: none;
+                            p{
+                                width: 204px;
+                                text-align: center;
+                                color: #e3101e;
+                                font-size: 16px;
+                                line-height: 30px;
+                                font-weight: 700;
+                            }
+                            button{
+                                width: 204px;
+                                height: 35px;
+                                border: none;
+                                color: #fff;
+                                background: #d917a2;
+                                cursor: pointer;
+                            }
+                        }
+                        #fl-p {
+                            position: relative;
+                            width: 170px;
+                            height: 232px;
+                            top: 20px;
+                            left: 21px;
+                            z-index: 1;
+                            #floor-pic {
+                                width: 160px;
+                                height: 160px;
+                            }
+                            #floor-txt {
+                                #floor-name {
+                                    margin-top: 15px;
+                                    width: 100%;
+                                    height: 21px;
+                                    font: 12px/18px "Microsoft YaHei";
+                                    overflow: hidden;
+                                    a {
+                                        color: #5e5e5e;
+                                    }
+                                }
+                                #floor-price {
+                                    color: #e3101e;
+                                    padding-top: 5px;
+                                    height: auto;
+                                    line-height: 20px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #floor-body-box3 {
+                float: right;
+                width: 170px;
+                height: 520px;
+                background: blue;
+                a{
+                    display: block;
+                    border-bottom: 1px solid #fdf0d9;
+                    img{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+#market-box-wrap{
+    margin: 40px auto 0;   
+    width: $wid100;
+    #market-box{
+        margin: 0 auto;
+        padding: 15px 0;
+        height: 99px;
+        background: #d917a2;
+        width: $width;
+        overflow: hidden;
+        li{
+            float: left;
+            padding-left: 46px;
+            width: 253px;
+            border-right: 1px dashed #f09463;
+            h3{
+                margin-bottom: 5px;
+                font-size: 16px;
+                color: #fff;
+            }
+            a{
+                float: left;
+                display: block;
+                margin-right: 20px;
+                width: 60px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 14px;
+                color: #fff;
+                overflow: hidden;
+            }
+        }
+    }
+}

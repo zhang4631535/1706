@@ -107,7 +107,7 @@ $(function(){
 			var i= $(this).index();
 			console.log(i);
 			$(this).addClass("fl-act").siblings().removeClass("fl-act");
-			$("#floor-banner li").eq($(this).index()).fadeIn().siblings().fadeOut();
+			$("#floor-banner li").eq(i).fadeIn().siblings().fadeOut();
 		})
 	});
 	
