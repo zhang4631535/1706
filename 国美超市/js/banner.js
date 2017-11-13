@@ -85,6 +85,7 @@ $(function(){
 		})
 	});
 	$("#prev").click(function(){
+		clearInterval(timer);
 		i--;
 		if(i<0){
 			i=$("#banner-meau ul li").length-1;
@@ -92,8 +93,10 @@ $(function(){
 		$("#banner-list li").eq(i).fadeIn().siblings().fadeOut();
 		$("#banner-meau ul li").eq(i).addClass("active").siblings().removeClass("active");
 		bgcolor();
+
 	})
 	$("#next").click(function(){
+		clearInterval(timer);
 		i++;
 		if(i>=$("#banner-meau ul li").length){
 			i=0;

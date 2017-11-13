@@ -72,25 +72,24 @@ a {
   font-size: 12px;
   text-decoration: none; }
 
+#header-top {
+  width: 100%;
+  height: 80px;
+  background: #f54617; }
+  #header-top #header-top-center {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background: url(../img/header-top.jpg); }
+
 #index-header {
   width: 100%;
-  height: 110px;
   border-bottom: 1px solid #f3f3f3; }
-  #index-header #header-top {
-    width: 100%;
-    height: 80px;
-    background: #f54617; }
-    #index-header #header-top #header-top-center {
-      width: 1200px;
-      height: 80px;
-      margin: 0 auto;
-      background: url(../img/header-top.jpg); }
   #index-header #header-bottom {
     width: 100%;
     height: 30px;
-    background: #ddd; }
+    background: #f8f8f8; }
     #index-header #header-bottom #header-bottom-center {
-      background: #f8f8f8;
       width: 1200px;
       height: 30px;
       margin: 0 auto; }

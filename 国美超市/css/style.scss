@@ -78,11 +78,7 @@ a {
 }
 
 $width:1200px;
-#index-header {
-    width: 100%;
-    height: 110px;
-    border-bottom: 1px solid #f3f3f3;
-    #header-top {
+#header-top {
         width: 100%;
         height: 80px;
         background: #f54617;
@@ -93,12 +89,15 @@ $width:1200px;
             background: url(../img/header-top.jpg);
         }
     }
+#index-header {
+    width: 100%;
+    border-bottom: 1px solid #f3f3f3;
+    
     #header-bottom {
         width: 100%;
         height: 30px;
-        background: #ddd;
-        #header-bottom-center {
-            background: #f8f8f8;
+        background: #f8f8f8;
+        #header-bottom-center {           
             width: $width;
             height: 30px;
             margin: 0 auto;
