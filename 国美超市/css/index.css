@@ -139,6 +139,15 @@
         background: #d917a2;
         float: left;
         z-index: 10; }
+        #index-banner #index-banner-top-wrap #index-banner-top nav .navCon {
+          width: 758px;
+          height: 568px;
+          border: 1px solid #ddd;
+          border-left: 1px solid #fff;
+          position: absolute;
+          left: 200px;
+          background: #fff;
+          display: none; }
         #index-banner #index-banner-top-wrap #index-banner-top nav .nav-list a {
           margin-right: 5px;
           color: #fff; }

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>国美超市</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="css/floor.css"/>
-		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/floor.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
 		<div id="header-top">
 			<div id="header-top-center"></div>
@@ -28,11 +32,11 @@
 									<span>商品</span>
 								</div>
 								<ul id="search-type-list"></ul>
-								
+
 							</div>
 							<input id="index-input" type="text" value="电水壶" />
 							<button id="index-btn">搜索</button>
-							
+
 						</form>
 					</div>
 					<div id="hotword">
@@ -47,119 +51,152 @@
 					</div>
 				</div>
 				<div id="index-cart">
-					
+
 				</div>
 			</div>
 			<div id="index-text-bottom">
-				<div id="index-tit"><a href="javascript:;">全部商品分类</a></div>
+				<div id="index-tit">
+					<a href="javascript:;">全部商品分类</a>
+				</div>
 				<ul id="index-text-bottom-list">
-					<li><h2><a href="javascript:;">食品酒水</a></h2></li>
-					<li><h2><a href="javascript:;">美妆个护</a></h2></li>
-					<li><h2><a href="javascript:;">母婴玩具</a></h2></li>
-					<li><h2><a href="javascript:;">医疗保健</a></h2></li>
-					<li><h2><a href="javascript:;">家居日用</a></h2></li>
-					<li><h2><a href="javascript:;">床品家纺</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">食品酒水</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">美妆个护</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">母婴玩具</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">医疗保健</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">家居日用</a></h2></li>
+					<li>
+						<h2><a href="javascript:;">床品家纺</a></h2></li>
 				</ul>
 			</div>
 		</div>
 		<div id="index-banner">
 			<div id="index-banner-top-wrap">
-				
+
 				<div id="index-banner-top">
 					<nav>
-						<ul class="nav-list">
-							<li class="nav-item" id="nav-item-first">
-								<h2>
+						<div class="navCon">
+							<script id="navCon" type="text/html">
+								<div class="navList clearfix">
+									<div class="part1">
+								
+										<div class="detail">
+											{{each subNavLists as value1}}
+											<dl class="detail_item clearfix">
+												<dt><a href="" target="_blank">{{value1.subNavTit}}<span>&gt;</span></a></dt>
+												<dd>
+													{{each value1.subNavList as value11}}
+													<a href="" target="_blank">{{value11}}</a>
+													{{/each}}
+												</dd>
+											</dl>
+											
+											{{/each}}
+											{{each tjImg as value2}}
+												<a href="#"><img src="{{value2}}" /></a>
+											{{/each}}
+										</div>
+									</div>
+								</div>
+							</script>
+						</div>
+							<ul class="nav-list">
+								<li class="nav-item" id="nav-item-first">
+									<h2>
 									<a href="javascript:;">食品饮料</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">休闲零食</a>
-									<a href="javascript:;">饮料/水</a>
-									<a href="javascript:;">牛奶</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">休闲零食</a>
+										<a href="javascript:;">饮料/水</a>
+										<a href="javascript:;">牛奶</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">粮油副食</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">食用油</a>
-									<a href="javascript:;">米</a>
-									<a href="javascript:;">南北干货</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">食用油</a>
+										<a href="javascript:;">米</a>
+										<a href="javascript:;">南北干货</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">个人护理</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">男士护理</a>
-									<a href="javascript:;">女士护理</a>
-									<a href="javascript:;">口腔护理</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">男士护理</a>
+										<a href="javascript:;">女士护理</a>
+										<a href="javascript:;">口腔护理</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">家居日用</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">厨房餐具</a>
-									<a href="javascript:;">床品家纺</a>
-									<a href="javascript:;">清洁用品</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">厨房餐具</a>
+										<a href="javascript:;">床品家纺</a>
+										<a href="javascript:;">清洁用品</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">美容护肤</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">面部护理</a>
-									<a href="javascript:;">香水SPA</a>
-									<a href="javascript:;">魅力彩妆</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">面部护理</a>
+										<a href="javascript:;">香水SPA</a>
+										<a href="javascript:;">魅力彩妆</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">母婴玩具</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">婴儿奶粉</a>
-									<a href="javascript:;">尿裤湿巾</a>
-									<a href="javascript:;">洗护喂养</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">婴儿奶粉</a>
+										<a href="javascript:;">尿裤湿巾</a>
+										<a href="javascript:;">洗护喂养</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">中外茗酒</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">酒水</a>
-									<a href="javascript:;">茗茶</a>
-									<a href="javascript:;">茗茶</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">酒水</a>
+										<a href="javascript:;">茗茶</a>
+										<a href="javascript:;">茗茶</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">生鲜水果</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">海鲜水产</a>
-									<a href="javascript:;">水果蔬菜</a>
-									<a href="javascript:;">水果蔬菜</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<h2>
+									<div id="">
+										<a href="javascript:;">海鲜水产</a>
+										<a href="javascript:;">水果蔬菜</a>
+										<a href="javascript:;">水果蔬菜</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<h2>
 									<a href="javascript:;">医疗健康</a>
 								</h2>
-								<div id="">
-									<a href="javascript:;">成人用品</a>
-									<a href="javascript:;">医疗器械</a>
-									<a href="javascript:;">保健食品</a>
-								</div>
-							</li>
-						</ul>
-						<div id="nav-json"></div>
+									<div id="">
+										<a href="javascript:;">成人用品</a>
+										<a href="javascript:;">医疗器械</a>
+										<a href="javascript:;">保健食品</a>
+									</div>
+								</li>
+							</ul>
+							<div id="nav-json"></div>
 					</nav>
 					<div id="banner">
 						<ul id="banner-list">
@@ -191,409 +228,446 @@
 						<div id="banner-r-t"><img src="img/lanyue.jpg" /></div>
 						<div id="banner-r-b"></div>
 					</div>
-				</div>
-				
-			</div>
-			<div id="index-banner-bottom-wrap">
-				<div id="index-banner-bottom">
-					<div id="index-banner-bottom-center">
-						<img src="img/bb1.jpg" />
-						<img src="img/bb2.jpg" />
-						<img src="img/bb3.jpg" />
 					</div>
-				</div>
-			</div>
-		</div>
-		<div id="index-quanzi-wrap">
-			<div id="index-quanzi">
-				<p>精彩圈子</p>
-				<ul>
-					<li>
-						<div>
-							<img src="img/quanzi1.jpg" />
-						</div>
-						<div>
-							<span>美妆</span>
-							<a href="javascript:;">美妆</a>
-						</div>
-						<div>
-							成员：<span>910</span>
-							话题：<span>1.0万</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src="img/quanzi2.jpg" />
-						</div>
-						<div>
-							<span>零食</span>
-							<a href="javascript:;">秘制烘焙</a>
-						</div>
-						<div>
-							成员：<span>608</span>
-							话题：<span>3908</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src="img/quanzi3.jpg" />
-						</div>
-						<div>
-							<span>红酒</span>
-							<a href="javascript:;">张小贱和他的酒世界</a>
-						</div>
-						<div>
-							成员：<span>199</span>
-							话题：<span>65</span>
-						</div>
-					</li>
-					<li>
-						<div>
-							<img src="img/quanzi4.jpg" />
-						</div>
-						<div>
-							<span>零食</span>
-							<a href="javascript:;">嘴不能闲</a>
-						</div>
-						<div>
-							成员：<span>87</span>
-							话题：<span>2128</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div id="index-brand-wrap">
-			<div id="index-brand">
-				<div id="index-brand-pp">
-					<div>品牌盛宴</div>
-					<ul>
-						<li><img src="img/pp1.jpg"/></li>
-						<li><img src="img/pp2.jpg"/></li>
-						<li><img src="img/pp3.jpg"/></li>
-						<li><img src="img/pp4.jpg"/></li>
-						<li><img src="img/pp5.jpg"/></li>
-						<li><img src="img/pp6.jpg"/></li>
-					</ul>
-				</div>
-				<div id="index-brand-rq">
-					<div>人群导购</div>
-					<ul>
-						<li><img src="img/pp1.jpg"/></li>
-						<li><img src="img/pp2.jpg"/></li>
-						<li><img src="img/pp3.jpg"/></li>
-						<li><img src="img/pp4.jpg"/></li>
-						<li><img src="img/pp5.jpg"/></li>
-						<li><img src="img/pp6.jpg"/></li>
-					</ul>
-				</div>
-				<div id="index-brand-bb">
-					<div>必buy清单</div>
-					<ul>
-						<li><img src="img/pp1.jpg"/></li>
-						<li><img src="img/pp2.jpg"/></li>
-						<li><img src="img/pp3.jpg"/></li>
-						<li><img src="img/pp4.jpg"/></li>
-						<li><img src="img/pp5.jpg"/></li>
-						<li><img src="img/pp6.jpg"/></li>
-					</ul>	
-					
-				</div>
-			</div>
-		</div>
-		<div id="fixed-bar-wrap">
-			<div id="fixed-bar">
-				<div id="wrapper">
-					<div>楼层直达</div>
-					<ul id="index-floor">
-						<li><a href="javascript:;">休闲食品</a></li>
-						<li><a href="javascript:;">进口食品</a></li>
-						<li><a href="javascript:;">美妆护肤</a></li>
-						<li><a href="javascript:;">个人护理</a></li>
-						<li><a href="javascript:;">奶粉尿裤</a></li>
-						<li><a href="javascript:;">玩具车床</a></li>
-						<li><a href="javascript:;">粮油生鲜</a></li>
-						<li><a href="javascript:;">健康医疗</a></li>
-						<li><a href="javascript:;">家居日用</a></li>
-						<li><a href="javascript:;">酒水茗茶</a></li>
-						<li><a href="javascript:;">床品家纺</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="floor-area-wrap">
-			<div id="floor-area">
-				<div id="model-head">
-					<h2>休闲食品</h2>
-					<ul>
-						<li><h4><a href="javascript:;">糖果巧克力</a></h4></li>
-						<li><h4><a href="javascript:;">休闲零食</a></h4></li>
-						<li><h4><a href="javascript:;">坚果炒货</a></h4></li>
-						<li><h4><a href="javascript:;">饼干糕点</a></h4></li>
-						<li><h4><a href="javascript:;">月饼</a></h4></li>
-						<li><h4><a href="javascript:;">谷物冲调</a></h4></li>
-						<li><h4><a href="javascript:;">咖啡</a></h4></li>
-						<li><h4><a href="javascript:;">水/饮料</a></h4></li>
-					</ul>
-				</div>
-				<div id="floor-body">
-					<div id="floor-body-box1">
-						<div id="floor-box1-t">
-							<div id="floor-bant">
-								<ul>
-									<li>•</li>
-									<li>•</li>
-									<li>•</li>
-								</ul>
-							</div>
-							<div id="floor-banner">
-								<ul>
-									<li><a href="javascript:;"><img src="img/floor1.jpg"/></a></li>
-									<li><a href="javascript:;"><img src="img/floor2.jpg"/></a></li>
-									<li><a href="javascript:;"><img src="img/floor3.jpg"/></a></li>
-								</ul>
-							</div>
-						</div>
-						<div id="floor-box1-b">
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-							<a href="javascript:;">谷物冲调</a>
-						</div>
-					</div>
-					<div id="floor-body-box2">
-						<ul id="floor-body-list">
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb1.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb2.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb3.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb4.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb5.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb6.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb7.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-							<li id="floor-item">
-								<div id="floor-cart">
-									<p>￥138.00</p>
-									<button>加入购物车</button>
-								</div>
-								<div id="fl-p">
-									<div id="floor-pic">
-										<a href="javascript:;"><img src="img/fb8.jpg"/></a>
-									</div>
-									<div id="floor-txt">
-										<div id="floor-name">
-											<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
-										</div>
-										<div id="floor-price">
-											￥138.0
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div id="floor-body-box3">
-						<a href="javascript:;"><img src="img/fb9.jpg"/></a>
-						<a href="javascript:;"><img src="img/fb10.jpg"/></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--<section id="index-section"></section>-->
-		<div id="market-box-wrap">
-			<div id="market-box">
-				<ul>
-					<li>
-						<h3>食品酒水</h3>
-						<div>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-						</div>
-					</li>
-					<li>
-						<h3>母婴玩具</h3>
-						<div>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-						</div>
-					</li>
-					<li>
-						<h3>医疗保健</h3>
-						<div>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-						</div>
-					</li>
-					<li>
-						<h3>美妆个护</h3>
-						<div>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-							<a href="javascript:;">零食零食</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
 
-		<footer id="index-footer-wrap">
-			
-		</footer>
+					</div>
+					<div id="index-banner-bottom-wrap">
+						<div id="index-banner-bottom">
+							<div id="index-banner-bottom-center">
+								<img src="img/bb1.jpg" />
+								<img src="img/bb2.jpg" />
+								<img src="img/bb3.jpg" />
+							</div>
+						</div>
+					</div>
+					</div>
+					<div id="index-quanzi-wrap">
+						<div id="index-quanzi">
+							<p>精彩圈子</p>
+							<ul>
+								<li>
+									<div>
+										<img src="img/quanzi1.jpg" />
+									</div>
+									<div>
+										<span>美妆</span>
+										<a href="javascript:;">美妆</a>
+									</div>
+									<div>
+										成员：<span>910</span> 话题：
+										<span>1.0万</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="img/quanzi2.jpg" />
+									</div>
+									<div>
+										<span>零食</span>
+										<a href="javascript:;">秘制烘焙</a>
+									</div>
+									<div>
+										成员：<span>608</span> 话题：
+										<span>3908</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="img/quanzi3.jpg" />
+									</div>
+									<div>
+										<span>红酒</span>
+										<a href="javascript:;">张小贱和他的酒世界</a>
+									</div>
+									<div>
+										成员：<span>199</span> 话题：
+										<span>65</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="img/quanzi4.jpg" />
+									</div>
+									<div>
+										<span>零食</span>
+										<a href="javascript:;">嘴不能闲</a>
+									</div>
+									<div>
+										成员：<span>87</span> 话题：
+										<span>2128</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="index-brand-wrap">
+						<div id="index-brand">
+							<div id="index-brand-pp">
+								<div>品牌盛宴</div>
+								<ul>
+									<li><img src="img/pp1.jpg" /></li>
+									<li><img src="img/pp2.jpg" /></li>
+									<li><img src="img/pp3.jpg" /></li>
+									<li><img src="img/pp4.jpg" /></li>
+									<li><img src="img/pp5.jpg" /></li>
+									<li><img src="img/pp6.jpg" /></li>
+								</ul>
+							</div>
+							<div id="index-brand-rq">
+								<div>人群导购</div>
+								<ul>
+									<li><img src="img/pp1.jpg" /></li>
+									<li><img src="img/pp2.jpg" /></li>
+									<li><img src="img/pp3.jpg" /></li>
+									<li><img src="img/pp4.jpg" /></li>
+									<li><img src="img/pp5.jpg" /></li>
+									<li><img src="img/pp6.jpg" /></li>
+								</ul>
+							</div>
+							<div id="index-brand-bb">
+								<div>必buy清单</div>
+								<ul>
+									<li><img src="img/pp1.jpg" /></li>
+									<li><img src="img/pp2.jpg" /></li>
+									<li><img src="img/pp3.jpg" /></li>
+									<li><img src="img/pp4.jpg" /></li>
+									<li><img src="img/pp5.jpg" /></li>
+									<li><img src="img/pp6.jpg" /></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div id="fixed-bar-wrap">
+						<div id="fixed-bar">
+							<div id="wrapper">
+								<div>楼层直达</div>
+								<ul id="index-floor">
+									<li>
+										<a href="javascript:;">休闲食品</a>
+									</li>
+									<li>
+										<a href="javascript:;">进口食品</a>
+									</li>
+									<li>
+										<a href="javascript:;">美妆护肤</a>
+									</li>
+									<li>
+										<a href="javascript:;">个人护理</a>
+									</li>
+									<li>
+										<a href="javascript:;">奶粉尿裤</a>
+									</li>
+									<li>
+										<a href="javascript:;">玩具车床</a>
+									</li>
+									<li>
+										<a href="javascript:;">粮油生鲜</a>
+									</li>
+									<li>
+										<a href="javascript:;">健康医疗</a>
+									</li>
+									<li>
+										<a href="javascript:;">家居日用</a>
+									</li>
+									<li>
+										<a href="javascript:;">酒水茗茶</a>
+									</li>
+									<li>
+										<a href="javascript:;">床品家纺</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="floor-area-wrap">
+						<div id="floor-area">
+							<div id="model-head">
+								<h2>休闲食品</h2>
+								<ul>
+									<li>
+										<h4><a href="javascript:;">糖果巧克力</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">休闲零食</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">坚果炒货</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">饼干糕点</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">月饼</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">谷物冲调</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">咖啡</a></h4></li>
+									<li>
+										<h4><a href="javascript:;">水/饮料</a></h4></li>
+								</ul>
+							</div>
+							<div id="floor-body">
+								<div id="floor-body-box1">
+									<div id="floor-box1-t">
+										<div id="floor-bant">
+											<ul>
+												<li>•</li>
+												<li>•</li>
+												<li>•</li>
+											</ul>
+										</div>
+										<div id="floor-banner">
+											<ul>
+												<li>
+													<a href="javascript:;"><img src="img/floor1.jpg" /></a>
+												</li>
+												<li>
+													<a href="javascript:;"><img src="img/floor2.jpg" /></a>
+												</li>
+												<li>
+													<a href="javascript:;"><img src="img/floor3.jpg" /></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div id="floor-box1-b">
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+										<a href="javascript:;">谷物冲调</a>
+									</div>
+								</div>
+								<div id="floor-body-box2">
+									<ul id="floor-body-list">
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb1.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb2.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb3.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb4.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb5.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb6.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb7.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+										<li id="floor-item">
+											<div id="floor-cart">
+												<p>￥138.00</p>
+												<button>加入购物车</button>
+											</div>
+											<div id="fl-p">
+												<div id="floor-pic">
+													<a href="javascript:;"><img src="img/fb8.jpg" /></a>
+												</div>
+												<div id="floor-txt">
+													<div id="floor-name">
+														<a href="javascript:;">【国美自营】 沃隆 休闲食品</a>
+													</div>
+													<div id="floor-price">
+														￥138.0
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div id="floor-body-box3">
+									<a href="javascript:;"><img src="img/fb9.jpg" /></a>
+									<a href="javascript:;"><img src="img/fb10.jpg" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<section id="index-section"></section>-->
+					<div id="market-box-wrap">
+						<div id="market-box">
+							<ul>
+								<li>
+									<h3>食品酒水</h3>
+									<div>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+									</div>
+								</li>
+								<li>
+									<h3>母婴玩具</h3>
+									<div>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+									</div>
+								</li>
+								<li>
+									<h3>医疗保健</h3>
+									<div>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+									</div>
+								</li>
+								<li>
+									<h3>美妆个护</h3>
+									<div>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+										<a href="javascript:;">零食零食</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<footer id="index-footer-wrap">
+
+					</footer>
 	</body>
+
 </html>

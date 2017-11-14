@@ -165,6 +165,16 @@ $wid100:100%;
                 background: #d917a2;
                 float: left;
                 z-index: 10;
+                .navCon{
+                    width: 758px;
+                    height: 568px;
+                    border: 1px solid #ddd;
+                    border-left: 1px solid #fff;;
+                    position: absolute;
+                    left: 200px;
+                    background: #fff;
+                    display: none;
+                }
                 .nav-list {
                     a {
                         margin-right: 5px;
