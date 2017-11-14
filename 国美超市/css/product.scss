@@ -170,11 +170,12 @@ $wid100:100%;
                     position: absolute;
                     width: 200px;
                     height: 200px;
-                    background: yellow;
+                    background: #ddd;
                     opacity: .5;
                 }
             }
             #bigArea{
+                z-index: 20;
                 display: none;
                 position: absolute;
                 top: -1px;
@@ -261,6 +262,305 @@ $wid100:100%;
                         }
                     }
                 }
+            }
+        }
+    }
+    #prd{
+        width: 620px;
+        margin: 20px 0 0 30px;
+        float: left;
+        #hgroup{
+            position: relative;
+            padding-bottom: 16px;
+            h1{
+                width: 480px;
+                font-size: 16px;
+                line-height: 26px;
+                color: #5e5e5e;
+                font-weight: 600;
+                padding-top: 5px;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            h4{
+                width: 480px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #e3101e;
+                overflow: hidden;
+                padding-top: 1px;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            div{
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 1px solid #ccc;
+                padding: 5px 10px;
+                cursor: pointer;
+                color: #5e5e5e;
+                cursor: pointer;
+            }
+        }
+        #prd-price{
+            width: 600px;
+            height: 37px;
+            padding: 20px 10px 0;
+            background: #f6f6f6;
+            position: relative;
+            line-height: 34px;
+            padding-bottom: 18px;
+            #prd-price-left{
+                color: #888;
+                float: left;
+            }
+            #prd-price-center{
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                span{
+                    display: block;
+                    font-family: Arial;
+                    font-size: 24px;
+                    color: #e3101e;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    em{
+                        display: block;
+                        float: left;
+                        font-size: 16px;
+                        margin-right: 2px;
+                        font-style: normal;
+                    }
+                }
+                a{
+                    position: absolute;
+                    right: -45px;
+                    top: 0;
+                    display: block;
+                    float: left;
+                    line-height: 37px;
+                    color: #069;
+                }
+            }
+            #prd-price-right{
+                height: 33px;
+                line-height: 12px;
+                float: right;
+                span{
+                    float: left;
+                    display: block;
+                    font-size: 32px;
+                    line-height: 32px;
+                    color: rgb(204, 204, 204);
+                    margin-right: 3px;
+                    font-family: 宋体;
+                }
+                div{
+                    float: left;
+                    .p2{
+                        margin-top: 9px;
+                        a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            outline: 0;
+                            font-weight: 400;
+                            color: #069;
+                            em{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        #prd-proper{
+            
+            padding-left: 10px;
+            clear: both;
+            #prd-proper1{
+                width: 610px;
+                height: 20px;
+                margin-top: 20px;
+                clear: both;
+                lable{
+                    line-height: 20px;
+                    float: left;
+                    color: #888;
+                }
+                #prd-proper1-r{
+                    
+                    margin-left: 18px;
+                    float: left;
+                    #guanjia{
+                        padding: 3px 10px 3px 17px;
+                        border: 1px solid #61819f;
+                        border-left: 0 solid #61819f;
+                        margin-right: 16px;
+                        position: relative;
+                        float: left;
+                        em{
+                            background: url(../img/bg-sprite.png) no-repeat 0 -2077px;
+                            width: 8px;
+                            height: 20px;
+                            position: absolute;
+                            left: -8px;
+                            top: -1px;
+                        }
+                        b{
+                            background: url(../img/bg-sprite.png) no-repeat 0 -2185px;
+                            left: -5px;
+                            padding: 8px;
+                            position: absolute;
+                            top: 1px;
+                        }
+                        a{
+                                cursor: pointer;
+                                outline: 0;
+                                font-weight: 400;
+                                margin: 0;
+                                color: #61819f;
+                        }
+                    }
+                }
+            }
+            #prd-proper2{
+                width: 610px;
+                height: 18px;
+                line-height: 18px;
+                margin-top: 13px;
+                color: #5e5e5e;
+                lable{
+                    line-height: 20px;
+                    float: left;
+                    color: #888;
+                }
+                #prd-proper2-r{
+                    margin-left: 10px;
+                    float: left;
+                    position: relative;
+                    div{
+                        height: 18px;
+                        margin-left: -6px;
+                        float: left;
+                        position: relative;
+                        padding: 0 21px 0 6px;
+                        z-index: 10;
+                        color: #5e5e5e;
+                        font-weight: 400;
+                    }
+                }
+            }
+            #prd-proper3{
+                margin-top: 16px;
+                clear: both;
+                lable{
+                    line-height: 20px;
+                    float: left;
+                    color: #888;
+                }
+                div{
+                    margin-top: 5px;
+                    margin-left: 8px;
+                    float: left;
+                    a{
+                        color: #5e5e5e;
+                        margin: 0 5px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+        }
+        #prd-btn{
+            min-height: 42px;
+            margin-bottom: 25px;
+            margin-top: 60px;
+            padding-left: 10px;
+            position: relative;
+            #count-wrap{
+                position: relative;
+                float: left;
+                width: 46px;
+                height: 38px;
+                border: 1px solid #ccc;
+                margin-right: 10px;
+                input{
+                    width: 32px;
+                    border: none;
+                    display: block;
+                    line-height: 38px;
+                    text-align: center;
+                    float: left;
+                    height: 36px;
+                    color: #5e5e5e;
+                }
+                .jia{
+                    display: block;
+                    float: left;
+                    width: 13px;
+                    height: 19px;
+                    border-left: 1px solid #ccc;
+                    line-height: 18px;
+                    text-align: center;
+                    border-bottom: 1px solid #ccc;
+                    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+                    color: #5e5e5e;
+                    background: #f8f8f8;
+                }
+                .jian{
+                    display: block;
+                    float: left;
+                    width: 13px;
+                    height: 18px;
+                    border-left: 1px solid #ccc;
+                    line-height: 18px;
+                    text-align: center;
+                    border-bottom: 1px solid #ccc;
+                    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+                    color: #5e5e5e;
+                    background: #f8f8f8;
+                }
+            }
+            #addcart{
+                display: block;
+                height: 24px;
+                background-color: #e3101e;
+                float: left;
+                padding: 8px 25px;
+                margin-right: 8px;
+                font: 18px/22px 'Microsoft Yahei';
+                color: #fff;
+                cursor: pointer;
+                outline: 0;
+            }
+            #mobtn{
+                padding: 8px 0;
+                width: 98px;
+                color: #5e5e5e;
+                font-size: 12px;
+                border: 1px solid #ccc;
+                position: relative;
+                float: left;
+                margin-right: 8px;
+                font: 12px/22px 'Microsoft Yahei';
+                i{
+                    padding: 5px 14px;
+                    margin-right: 8px;
+                    margin-left: 6px;
+                    background: url(../img/bg-sprite.png) no-repeat;
+                    background-position: 0 -2332px;
+                }
+            }
+        }
+        #prd-tip{
+            margin-bottom: 35px;
+            span{
+                float: left;
+                list-style: decimal;
+                padding-left: 10px;
             }
         }
     }
