@@ -432,15 +432,16 @@
           background: #f8f8f8; }
       #gome-container #prd #prd-btn #addcart {
         display: block;
-        height: 24px;
+        height: 40px;
+        width: 140px;
         background-color: #e3101e;
         float: left;
-        padding: 8px 25px;
         margin-right: 8px;
         font: 18px/22px 'Microsoft Yahei';
         color: #fff;
         cursor: pointer;
-        outline: 0; }
+        outline: 0;
+        border: 0; }
       #gome-container #prd #prd-btn #mobtn {
         padding: 8px 0;
         width: 98px;

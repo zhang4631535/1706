@@ -526,15 +526,16 @@ $wid100:100%;
             }
             #addcart{
                 display: block;
-                height: 24px;
+                height: 40px;
+                width: 140px;
                 background-color: #e3101e;
                 float: left;
-                padding: 8px 25px;
                 margin-right: 8px;
                 font: 18px/22px 'Microsoft Yahei';
                 color: #fff;
                 cursor: pointer;
                 outline: 0;
+                border: 0;
             }
             #mobtn{
                 padding: 8px 0;

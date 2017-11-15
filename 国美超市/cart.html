@@ -1,9 +1,140 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/product.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/productList.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
+		<div id="cart-header-bottom">
+			<div id="header-bottom-center">
+				<ul>
+					<li>
+						<a href="javascript:;">国美首页</a>
+					</li>
+					<li>
+						<a href="javascript:;">国美会员</a>
+					</li>
+					<li>
+						<a href="javascript:;">登录</a>
+					</li>
+					<li>
+						<a href="javascript:;">注册有礼</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="javascript:;">我的订单</a>
+					</li>
+					<li>
+						<a href="javascript:;">我的国美</a>
+					</li>
+					<li>
+						<a href="javascript:;">企业采购</a>
+					</li>
+					<li>
+						<a href="javascript:;">服务中心</a>
+					</li>
+					<li>
+						<a href="javascript:;">网站导航</a>
+					</li>
+					<li>
+						<a href="javascript:;">手机国美</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="cart-logo">
+			<img src="img/cart-logo.jpg" />
+		</div>
+		<div id="cart-box">
+			<div id="cart-header">
+				<span><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></span>
+				<span>商品信息</span>
+				<span>单价</span>
+				<span>数量</span>
+				<span>小计</span>
+				<span>操作</span>
+			</div>
+			<ul id="cart-list">
+				
+			</ul>
+		</div>
+		<div id="foot-wrap">
+			<div class="foot" id="foot">
+				<label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;全选</label>
+				<a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+				<div class="fr closing">去 结 算</div>
+				<div class="fr total">合计：<span id="priceTotal">￥0.00</span></div>
+				<div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+				<div class="selected-view">
+					<div id="selectedViewList" class="clearfix">
+						<div><img src="img/bb2.jpg"><span>取消选择</span></div>
+					</div>
+					<span class="arrow">◆<span>◆</span></span>
+				</div>
+			</div>
+		</div>
+		<div id="index-footw">
+			<div id="index-footer">
+				<ul>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>|</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+					<li>|</li>
+					<li>国美集团</li>
+					<li>国美集团</li>
+				</ul>
+				<p>本公司游戏产品适合18岁以上成年人使用 违法和不良信息举报电话：021-60766055</p>
+				<p>国美在线电子商务有限公司 办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区 客服电话:4008708708</p>
+				<p>©2000-2017 国美在线电子商务有限公司版权所有 京公安网备11010502027062 沪ICP备11009419号 沪B2-20120004号</p>
+				<div id="foot-credit">
+					<a href="javascript:;">
+						<i></i>
+						<b>经营性网站备案信息</b>
+					</a>
+					<a href="javascript:;">
+						<i></i>
+						<b>可信网站信用评价</b>
+					</a>
+					<a href="javascript:;">
+						<i></i>
+						<b>诚信网站</b>
+					</a>
+					<a href="javascript:;">
+						<i></i>
+						<b>朝阳网络警察</b>
+					</a>
+					<a href="javascript:;">
+						<i></i>
+						<b>网购大家评</b>
+					</a>
+					<a href="javascript:;">
+						<i></i>
+						<b>上海市互联网违法和不良信息举报中心</b>
+					</a>
+				</div>
+			</div>
+		</div>
 	</body>
+
 </html>

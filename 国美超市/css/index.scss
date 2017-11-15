@@ -166,14 +166,31 @@ $wid100:100%;
                 float: left;
                 z-index: 10;
                 .navCon{
-                    width: 758px;
-                    height: 568px;
+                    padding: 23px 0 0 23px;
+                    width: 735px;
+                    height: 545px;
                     border: 1px solid #ddd;
                     border-left: 1px solid #fff;;
                     position: absolute;
                     left: 200px;
                     background: #fff;
                     display: none;
+                    #navCon{
+                        .navList{
+                            .part1{
+                                .detail{
+                                    dl{
+                                        dt{
+                                            a{
+                                                font-size: 14px;
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .nav-list {
                     a {
@@ -336,7 +353,6 @@ $wid100:100%;
                 top: 0;
                 width: 240px;
                 height: 570px;
-                background: pink;
                 float: left;
                 #banner-r-t{
                     width: 240px;
@@ -344,7 +360,7 @@ $wid100:100%;
                 }
                 #banner-r-b{
                     width: 240px;
-                    height: 270px;
+                    height: 270px; 
                 }
             }
         }
@@ -641,16 +657,21 @@ $wid100:100%;
                         text-align: center;
                         color: #fff;
                         font-size: 16px;
-                        &:hover {
+                        
+                    }
+                    &:hover {
                             background: #C80C93;
                             border-radius: 3px;
                         }
-                    }
                     .floors {
                         background: #C80C93;
                         border-radius: 3px;
                     }
                 }
+                .floors {
+                        background: #C80C93;
+                        border-radius: 3px;
+                    }
             }
         }
     }

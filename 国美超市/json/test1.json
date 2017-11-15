@@ -2,41 +2,49 @@
 	"10001": {
 		"id": 10001,
 		"title": "清风绿花2层200抽20包小规格抽面（整箱销售）",
+		"title2": "纸质细腻柔韧，吸水不易破",
+		"qijian": "清风旗舰店",
 		"imgsrc1": "img/3big1.jpg",
 		"imgsrc2": "img/3big2.jpg",
 		"imgsrc3": "img/3big3.jpg",
 		"imgsrc4": "img/3big4.jpg",
 		"imgsrc5": "img/3big5.jpg",
-		"price": "￥43.9"
+		"price": "￥88"
 	},
 	"10002": {
 		"id": 10002,
 		"title": "大闸蟹",
+		"title2": "大闸蟹好吃得很啊",
+		"qijian": "大闸蟹旗舰店",
 		"imgsrc1": "img/4big1.jpg",
 		"imgsrc2": "img/4big2.jpg",
 		"imgsrc3": "img/4big3.jpg",
 		"imgsrc4": "img/4big4.jpg",
 		"imgsrc5": "img/4big5.jpg",
-		"price": "￥188.88"
+		"price": "￥288"
 	},
 	"10003": {
 		"id": 10003,
 		"title": "大豆",
+		"title2": "这大豆贼香",
+		"qijian": "大豆旗舰店",
 		"imgsrc1": "img/big1.jpg",
 		"imgsrc2": "img/big2.jpg",
 		"imgsrc3": "img/big3.jpg",
 		"imgsrc4": "img/big4.jpg",
 		"imgsrc5": "img/big5.jpg",
-		"price": "￥18.88"
+		"price": "￥188"
 	},
 	"10004": {
 		"id": 10004,
 		"title": "五粮特曲",
+		"title2": "好喝不上头",
+		"qijian": "五粮液旗舰店",
 		"imgsrc1": "img/2big1.jpg",
 		"imgsrc2": "img/2big2.jpg",
 		"imgsrc3": "img/2big3.jpg",
 		"imgsrc4": "img/2big4.jpg",
 		"imgsrc5": "img/2big5.jpg",
-		"price": "￥288.88"
+		"price": "￥388"
 	}
 }

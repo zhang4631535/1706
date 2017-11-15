@@ -4,7 +4,6 @@ $(function() {
 		for(var i in data) {
 			str += "<li><a class='pic' href='detail.html?id=" + i + "'><img src='" + data[i].imgsrc + "'/></a><p class='name'><a href='#'>" + data[i].title + "</a></p><p class='price'>" + data[i].price + "</p></li>"
 		}
-		console.log(str);
 		$("#prolist").html(str);
 	})
 })

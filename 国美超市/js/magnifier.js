@@ -3,10 +3,11 @@ $(function() {
 	var dId = dataId.split("=")[1];
 	var quan = document.getElementById("gome-container");
 	console.log(dId);
+	
 	$.get("json/test1.json", function(data) {
 
 		for(var i in data) {
-			console.log(data[i]);
+			
 			if(data[i].id == dId) {
 				var str = `<div id="fangda-left">
 											<div id="zoomBox">
@@ -42,8 +43,8 @@ $(function() {
 										</div>
 										<div id="prd">
 											<div id="hgroup">
-												<h1>清风绿花2层200抽20包小规格抽面（整箱销售）</h1>
-												<h4>纸质细腻柔韧，吸水不易破</h4>
+												<h1>${data[i].title}</h1>
+												<h4>${data[i].title2}</h4>
 												<div>对比</div>
 											</div>
 											<div id="prd-price">
@@ -51,7 +52,7 @@ $(function() {
 													国&nbsp;&nbsp;美&nbsp;&nbsp;价
 												</div>
 												<div id="prd-price-center">
-													<span><em>￥</em>43.9</span>
+													<span>${data[i].price}</span>
 													<a href="#">降价通知</a>
 												</div>
 												<div id="prd-price-right">
@@ -92,7 +93,7 @@ $(function() {
 													<lable>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</lable>
 													<div>
 														由
-														<a href="#">清风旗舰店</a>
+														<a href="#">${data[i].qijian}</a>
 														<span>发货并负责售后服务。</span>
 													</div>
 												</div>
@@ -101,10 +102,10 @@ $(function() {
 												<div id="count-wrap">
 													<input id="enterqty" type="text" maxlength="5"
 													value="1" onblur="this.className='blur'" onfocus="this.className='focus'"/>
-													<a href="javascript:;" class="jia">+</a>
-													<a href="javascript:;" class="jian">-</a>
+													<a href="javascript:;" class="jia" id="add">+</a>
+													<a href="javascript:;" class="jian" id="reduce">-</a>
 												</div>
-												<a href="javascript:;" id="addcart">加入购物车</a>
+												<a href="./cart.html"><button id="addcart">加入购物车</button></a>
 												<a href="javascript:;" id="mobtn">
 													<i></i>
 													手机下单
@@ -115,6 +116,38 @@ $(function() {
 											</div>
 										</div>`;
 				quan.innerHTML = str;
+				var aBtn = document.getElementById("addcart");
+				//如果有cart，取出cart对应的值
+				if(getCookie("cart")){
+					var objCookie = JSON.parse(getCookie("cart"));
+				}else{
+					//没有的话 定义一个对象去，未来点击按钮时保存数据
+					var objCookie = {};
+				}
+				
+				aBtn.onclick = function(){
+					console.log(dId);
+					//取出当前商品ID
+					var proId = dId;
+					//同种商品增加数量
+					if(!objCookie[proId]){
+						objCookie[proId] = 1;
+					}else{
+						//不同商品增加一个新的属性，并赋值为1
+						objCookie[proId] += 1;
+					}
+					
+					//cookie存的是字符串，需要转换
+					var strCookie = JSON.stringify(objCookie);
+					
+					setCookie("cart",strCookie,7);
+					
+					//点击时，右上角的数字要同时发生改变
+//					total+=1;
+//					oSpan.innerHTML = total;
+					
+					
+				}
 				var oZoomBox = document.getElementById("zoomBox");
 				var oMidArea = document.getElementById("midArea");
 				var oZoom = document.getElementById("zoom");
@@ -122,9 +155,6 @@ $(function() {
 				var oBigImg = oBigArea.children[0];
 				var oSmallArea = document.getElementById("smallArea");
 				var aSmallLists = oSmallArea.children[1].children;
-
-				var oScroll = document.documentElement.scrollTop || document.body.scrollTop;
-				
 
 				oMidArea.onmousemove = function(e) {
 					var evt = e || event;
@@ -164,29 +194,35 @@ $(function() {
 					oBigArea.style.display = "none";
 
 				}
-				
-				var num=i;
-				
+
+				var num = i;
+
 				for(let a = 0; a < aSmallLists.length; a++) {
 					aSmallLists[a].onmouseenter = function() {
 						for(var j = 0; j < aSmallLists.length; j++) {
 							aSmallLists[j].className = "";
 						}
 						this.className = "hover";
-						
-						if(a ==0){
+
+						if(a == 0) {
 							oMidArea.children[0].src = data[num].imgsrc1;
-							oBigImg.src =data[num].imgsrc1;							
+							oBigImg.src = data[num].imgsrc1;
 						}
-						if(a ==1){
+						if(a == 1) {
 							oMidArea.children[0].src = data[num].imgsrc2;
 							oBigImg.src = data[num].imgsrc2;
 						}
-						if(a ==3){
-							console.log(data[num].imgsrc2)
-							console.log(a)
+						if(a == 2) {
+							oMidArea.children[0].src = data[num].imgsrc3;
+							oBigImg.src = data[num].imgsrc3;
+						}
+						if(a == 3) {
 							oMidArea.children[0].src = data[num].imgsrc4;
 							oBigImg.src = data[num].imgsrc4;
+						}
+						if(a == 4) {
+							oMidArea.children[0].src = data[num].imgsrc5;
+							oBigImg.src = data[num].imgsrc5;
 						}
 					}
 				}
