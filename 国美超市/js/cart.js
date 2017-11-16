@@ -17,12 +17,12 @@ window.onload = function() {
 				//i指产品id，取出该产品id对应的值（一个包含产品属性的对象）
 				var obj = data[i];
 				str += `<li>
-							<p class="checkbox"><input class="check-one check" type="checkbox" /></p>
+							<p data-id="${i}" class="checkbox"><input class="check-one check" type="checkbox" /></p>
 							<p class="goods"><img src="${obj.imgsrc}" alt="" /><span>${obj.title}</span></p>
 							<p class="price">${obj.price}</p>
 							<p class="count"><span class="reduce"></span><input class="count-input" type="text" value="${objCookie[i]}" /><span class="add">+</span></p>
 							<p class="subtotal">${objCookie[i]*data[i].price}</p>
-							<p class="operation"><span class="delete">删除</span></p>
+							<p data-id="${i}" class="operation"><span class="delete">删除</span></p>
 						</li>`
 			var num = document.getElementsByClassName("count-input");
 //			console.log(num);
@@ -167,12 +167,16 @@ window.onload = function() {
 							var conf = confirm('确定删除此商品吗？');
 							if(conf) {
 								this.parentNode.removeChild(this);
+								var id=this.children[5].getAttribute("data-id");
 								delete objCookie[id];
+								var strCookie = JSON.stringify(objCookie);
+								setCookie("cart", strCookie, 7);
 							}
 							break;
 					}
 					getTotal();
 				}
+				
 				// 给数目输入框绑定keyup事件
 				tr[i].getElementsByTagName('input')[1].onkeyup = function() {
 					var val = parseInt(this.value);
@@ -195,6 +199,12 @@ window.onload = function() {
 						for(var i = 0; i < tr.length; i++) {
 							// 如果被选中，就删除相应的行
 							if(tr[i].getElementsByTagName('input')[0].checked) {
+								console.log(tr[i])
+								var id=tr[i].children[0].getAttribute("data-id");
+								console.log(id)
+								delete objCookie[id];
+								var strCookie = JSON.stringify(objCookie);
+								setCookie("cart", strCookie, 7);
 								tr[i].parentNode.removeChild(tr[i]); // 删除相应节点
 								i--; //回退下标位置
 							}

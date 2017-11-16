@@ -14,31 +14,6 @@
 		<script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-		<style type="text/css">
-			.detail dt {
-				height: 30px;
-				line-height: 30px;
-				width: 405px;
-				border-bottom: 1px dashed #eee;
-			}
-			
-			.detail dl dt a {
-				color: #000;
-				font-weight: 700;
-			}
-			
-			.detail dl dd a {
-				color: #333;
-			}
-			
-			.detail dl dd {
-				display: block;
-			}
-			
-			.detail dl {
-				margin-bottom: 15px;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -76,7 +51,21 @@
 					</div>
 				</div>
 				<div id="index-cart">
-
+					<ul>
+						<li>
+							<span id="cartlinkbox">
+								<a href="cart.html">
+									<em class="i-cart">
+										<span class="shopnum">
+											<span id="commerce">0</span>
+							<i></i>
+							</span>
+							</em>
+							<span id="hdrcarttext">购物车空了</span>
+							</a>
+							</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div id="index-text-bottom">
@@ -109,23 +98,25 @@
 								<div class="navList clearfix">
 									<div class="part1">
 										<div class="detail">
-											{{each subNavLists as value1}}
-											<dl class="detail_item clearfix">
-												<dt><a href="productList.html" target="_blank">{{value1.subNavTit}}</a></dt>
-												<dd>
-													{{each value1.subNavList as value11}}
-													<a href="productList.html" target="_blank">{{value11}}</a>
-													{{/each}}
-												</dd>
-											</dl>
-
-											{{/each}} {{each tjImg as value2}}
-
-											<div style="float: right;">
-												<img style="overflow: hidden;clear: both;" src="{{value2}}" />
+											<div style="float:left;" id="tt-left">
+												{{each subNavLists as value1}}
+												<dl class="detail_item clearfix">
+													<dt><a href="productList.html" target="_blank">{{value1.subNavTit}}</a></dt>
+													<dd>
+														{{each value1.subNavList as value11}}
+														<a href="productList.html" target="_blank">{{value11}}</a>
+														{{/each}}
+													</dd>
+												</dl>
+												{{/each}}
 											</div>
-
-											{{/each}}
+											<div style="float:right;" id="tt-right">
+												{{each tjImg as value2}}
+												<div style="margin: 0 20px 20px 0;">
+													<img style="overflow: hidden;clear: both;" src="{{value2}}" />
+												</div>
+												{{/each}}
+											</div>
 										</div>
 									</div>
 								</div>
@@ -254,7 +245,7 @@
 					<div id="banner-right">
 						<div id="banner-r-t"><img src="img/lanyue.jpg" /></div>
 						<div id="banner-r-b">
-								<img src="img/youhui.jpg" />
+							<img src="img/youhui.jpg" />
 						</div>
 					</div>
 				</div>
@@ -409,7 +400,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<section id="index-section"></section>
 		<div id="market-box-wrap">
 			<div id="market-box">
@@ -485,13 +476,15 @@
 					<a>国美会员</a>
 				</li>
 				<li id="item2">
-					<b id="cart-num1"></b>
-					<i></i>
-					<b id="cart-num2">
-						<s id="sss">6</s>
-						<span></span>
-					</b>
-					<span id="text">购物车</span>
+					<a href="cart.html">
+						<b id="cart-num1"></b>
+						<i></i>
+						<b id="cart-num2">
+							<s></s>
+							<span id="cart-num">6</span>
+						</b>
+						<span id="text">购物车</span>
+					</a>
 				</li>
 				<li id="item3">
 					<b></b>

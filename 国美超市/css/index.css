@@ -85,6 +85,76 @@
             color: #dd00a7; }
           #index-text-wrap #index-text #topSearch #hotword a:nth-of-type(4) {
             color: #dd00a7; }
+    #index-text-wrap #index-text #index-cart {
+      position: absolute;
+      right: 0;
+      top: 32px;
+      z-index: 92;
+      width: 240px; }
+      #index-text-wrap #index-text #index-cart ul {
+        float: right;
+        display: inline;
+        z-index: 96;
+        position: relative;
+        font-size: 12px; }
+        #index-text-wrap #index-text #index-cart ul li {
+          float: left;
+          display: inline;
+          vertical-align: middle;
+          position: relative; }
+          #index-text-wrap #index-text #index-cart ul li #cartlinkbox {
+            display: inline-block; }
+            #index-text-wrap #index-text #index-cart ul li #cartlinkbox a {
+              padding: 5px 20px 0 45px;
+              line-height: 34px;
+              height: 34px;
+              width: 75px;
+              border: none;
+              margin: 1px;
+              color: #5E5E5E;
+              float: left;
+              display: inline;
+              position: relative;
+              z-index: 97; }
+              #index-text-wrap #index-text #index-cart ul li #cartlinkbox a .i-cart {
+                position: absolute;
+                width: 27px;
+                height: 20px;
+                background: url(../img/ui.png) -100px -701px;
+                top: 11px;
+                left: 10px; }
+                #index-text-wrap #index-text #index-cart ul li #cartlinkbox a .i-cart .shopnum {
+                  position: absolute;
+                  height: 18px;
+                  line-height: 18px;
+                  padding: 0 3px;
+                  top: -18px;
+                  min-width: 14px;
+                  text-align: center;
+                  left: 15px;
+                  background-color: #A5A5A5;
+                  color: #FFF;
+                  font-weight: 700; }
+                  #index-text-wrap #index-text #index-cart ul li #cartlinkbox a .i-cart .shopnum #commerce {
+                    line-height: 18px;
+                    text-align: center;
+                    color: #FFF;
+                    font-weight: 700;
+                    font-style: normal; }
+                  #index-text-wrap #index-text #index-cart ul li #cartlinkbox a .i-cart .shopnum i {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border: 4px dashed transparent;
+                    border-color: transparent transparent transparent #A5A5A5;
+                    border-right: 0;
+                    border-left-style: solid;
+                    overflow: hidden;
+                    bottom: -4px;
+                    left: 5px; }
+              #index-text-wrap #index-text #index-cart ul li #cartlinkbox a #hdrcarttext {
+                color: #5E5E5E;
+                line-height: 34px; }
   #index-text-wrap #index-text-bottom {
     width: 1200px;
     height: 40px;

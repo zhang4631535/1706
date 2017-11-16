@@ -116,6 +116,8 @@ $(function() {
 											</div>
 										</div>`;
 				quan.innerHTML = str;
+				var add = document.getElementById("add");
+				var reduce = document.getElementById("reduce");
 				var aBtn = document.getElementById("addcart");
 				//如果有cart，取出cart对应的值
 				if(getCookie("cart")){

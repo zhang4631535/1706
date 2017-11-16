@@ -101,6 +101,86 @@ $wid100:100%;
                 }
             }
         }
+        #index-cart{
+            position: absolute;
+            right: 0;
+            top: 32px;
+            z-index: 92;
+            width: 240px;
+            ul{
+                float: right;
+                display: inline;
+                z-index: 96;
+                position: relative;
+                font-size: 12px;
+                li{
+                    float: left;
+                    display: inline;
+                    vertical-align: middle;
+                    position: relative;
+                    #cartlinkbox{
+                        display: inline-block;
+                        a{
+                            padding: 5px 20px 0 45px;
+                            line-height: 34px;
+                            height: 34px;
+                            width: 75px;
+                            border: none;
+                            margin: 1px;
+                            color: #5E5E5E;
+                            float: left;
+                            display: inline;
+                            position: relative;
+                            z-index: 97;
+                            .i-cart{
+                                position: absolute;
+                                width: 27px;
+                                height: 20px;
+                                background: url(../img/ui.png) -100px -701px;
+                                top: 11px;
+                                left: 10px;
+                                .shopnum{
+                                    position: absolute;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    padding: 0 3px;
+                                    top: -18px;
+                                    min-width: 14px;
+                                    text-align: center;
+                                    left: 15px;
+                                    background-color: #A5A5A5;
+                                    color: #FFF;
+                                    font-weight: 700;
+                                    #commerce{
+                                        line-height: 18px;
+                                        text-align: center;
+                                        color: #FFF;
+                                        font-weight: 700;
+                                        font-style: normal;
+                                    }
+                                    i{
+                                        position: absolute;
+                                        width: 0;
+                                        height: 0;
+                                        border: 4px dashed transparent;
+                                        border-color: transparent transparent transparent #A5A5A5;
+                                        border-right: 0;
+                                        border-left-style: solid;
+                                        overflow: hidden;
+                                        bottom: -4px;
+                                        left: 5px;
+                                    }
+                                }
+                            }
+                            #hdrcarttext{
+                                color: #5E5E5E;
+                                line-height: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     #index-text-bottom {
         width: $width;

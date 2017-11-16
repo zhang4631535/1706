@@ -20,7 +20,7 @@ $(function() {
 			$("#index-section #floor-area-wrap").each(function() {
 				if($(this).offset().top >= $scrollTop) {
 					//								console.log($(this).index());
-					console.log($(this).index());
+//					console.log($(this).index());
 					$("#index-floor li").eq($(this).index()).addClass("floors").siblings().removeClass("floors");
 					return false;
 				}
@@ -40,3 +40,28 @@ $(function() {
 		$("#item3 a").animate({"left":0},100).css("display","none");
 	})
 })
+
+$(function(){
+	var total=$("#commerce");
+	var total2=$("#cart-num");
+	var sum=0;
+	for(var i in JSON.parse(getCookie("cart"))){
+		sum+=JSON.parse(getCookie("cart"))[i];
+	}
+	total.html(sum);
+	total2.html(sum);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
